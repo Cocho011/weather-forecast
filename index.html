@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <!-- Meta tags for character set and viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/9d317aec20.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+  <header>
+    <!-- Header with the title -->
+    <h1>Weather Dashboard</h1>
+  </header>
+  <!-- Sidebar for city search -->
+  <div class="row container-fluid">
+    <div class="col-3 sidebar">
+      <!-- Search input and button -->
+      <h3>Search for a City:</h3>
+      <div class="input-group mb-3">
+        <input type="text" id="city-input" class="form-control" placeholder="City Name" aria-describedby="search-city" />
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="search-city">
+            <i class="fas fa-search"></i> <!-- Search icon -->
+          </button>
+        </div>
+      </div>
+      <!-- List to display searched cities -->
+      <ul class="list-group" id="city-list"></ul>
+    </div>
+    <!-- Container for city data -->
+    <div class="col" id="city-info">
+      <div class="card mb-3">
+        <div class="card-body">
+          <!-- City name and weather data -->
+          <h5 class="card-title"></h5>
+          <p class="card-text" id="temperature"></p>
+          <p class="card-text" id="humidity"></p>
+          <p class="card-text" id="wind-speed"></p>
+          <p class="card-text" id="uv-index"></p>
+        </div>
+      </div>
+      <h3>5-Day Forecast</h3> <!-- Heading for forecast -->
+      <div class="row row-cols-3" id="forecast"></div> <!-- Container for forecast -->
+    </div>
+  </div>
+  <!-- JavaScript libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+  <!-- Additional scripts (if any) -->
+  <!-- <script src="config.js"></script> -->
 </body>
 </html>

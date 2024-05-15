@@ -1,0 +1,41 @@
+/* CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: #AEEEEE; /* Pastel blue background color */
+}
+
+#city-info {
+    margin: 10px;
+}
+
+.sidebar {
+    background-color: #FFD1DC; /* Pastel pink background color */
+    padding: 10px;
+}
+
+.daycard {
+    margin: 10px;
+    background-color: #AEEEEE; /* Pastel blue background color */
+    color: white;
+}
+
+/*Updating colors for UV index badges */
+#uv-index .badge-success {
+    background-color: #FFB6C1; /* Pastel pink for favorable UV index */
+}
+
+#uv-index .badge-warning {
+    background-color: #FFD1DC; /* Pastel pink for moderate UV index */
+}
+
+#uv-index .badge-danger {
+    background-color: #AEEEEE; /* Pastel blue for severe UV index */
+    color: white;
+}
